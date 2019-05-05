@@ -30,9 +30,15 @@ def sigmoid(x):
 
     Return:
     s -- sigmoid(x)
+    #hola hola hola
     """
     s = 1/(1+np.exp(-x))
     return s
+
+def relu (x):
+    x[x<=0] = 0
+    x[x>0] = 1
+    return x
 
 def load_planar_dataset():
     np.random.seed(1)
